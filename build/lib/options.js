@@ -76,7 +76,7 @@ exports.defaults = () => ({
   filenameHashing: true,
 
   // boolean, use full build?
-  runtimeCompiler: false,
+  runtimeCompiler: true,
 
   // deps to transpile
   transpileDependencies: [/* string or regex */],
