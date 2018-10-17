@@ -4,8 +4,8 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
-import contacts from '@src'
-Vue.use(contacts)
+import test from '@src'
+test()
 
 Vue.config.productionTip = false
 
