@@ -4,11 +4,23 @@
       alt="Vue logo"
       src="../assets/logo.png"
     >
+    <hello-world :name="name" :version="version"/>
   </div>
 </template>
 
 <script>
+import packageJson from '../../package'
+// @ is an alias to /example
 export default {
-  name: 'Home'
+  name: 'Home',
+  data () {
+    return {
+      name: packageJson.name,
+      version: packageJson.version
+    }
+  },
+  components: {
+    HelloWorld: () => import('@/components/HelloWorld.vue')
+  }
 }
 </script>
