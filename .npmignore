@@ -16,3 +16,13 @@ README.md
 *.map
 examples
 test/
+tests/
+example/
+preview/
+public/
+.browserslistrc
+.editorconig
+.eslintrc.js
+babel.config.js
+cypress.json
+postcss.config.js
