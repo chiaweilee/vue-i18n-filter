@@ -67,27 +67,32 @@ module.exports = (api, options) => {
     // js is handled by cli-plugin-babel ---------------------------------------
 
     // vue-loader --------------------------------------------------------------
-    const vueLoaderCacheConfig = api.genCacheConfig('vue-loader', {
-      'vue-loader': require('vue-loader/package.json').version,
-      /* eslint-disable-next-line node/no-extraneous-require */
-      '@vue/component-compiler-utils': require('@vue/component-compiler-utils/package.json').version,
-      'vue-template-compiler': require('vue-template-compiler/package.json').version
-    })
+    // const vueLoaderCacheConfig = api.genCacheConfig('vue-loader', {
+    //   'vue-loader': require('vue-loader/package.json').version,
+    //   /* eslint-disable-next-line node/no-extraneous-require */
+    //   '@vue/component-compiler-utils': require('@vue/component-compiler-utils/package.json').version,
+    //   'vue-template-compiler': require('vue-template-compiler/package.json').version
+    // })
 
     webpackConfig.module
       .rule('vue')
       .test(/\.vue$/)
-      .use('cache-loader')
-      .loader('cache-loader')
-      .options(vueLoaderCacheConfig)
+      // .use('cache-loader')
+      // .loader('cache-loader')
+      // .options(vueLoaderCacheConfig)
       .end()
       .use('vue-loader')
       .loader('vue-loader')
-      .options(Object.assign({
+      .options({
         compilerOptions: {
           preserveWhitespace: false
         }
-      }, vueLoaderCacheConfig))
+      })
+      // .options(Object.assign({
+      //   compilerOptions: {
+      //     preserveWhitespace: false
+      //   }
+      // }, vueLoaderCacheConfig))
 
     webpackConfig
       .plugin('vue-loader')
