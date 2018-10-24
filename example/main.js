@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
-import test from '@src'
+import test from '@'
 test()
 
 Vue.config.productionTip = false

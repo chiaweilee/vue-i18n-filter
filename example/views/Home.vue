@@ -10,7 +10,6 @@
 
 <script>
 import packageJson from '../../package'
-// @ is an alias to /example
 export default {
   name: 'Home',
   data () {
@@ -20,7 +19,7 @@ export default {
     }
   },
   components: {
-    HelloWorld: () => import('@/components/HelloWorld.vue')
+    HelloWorld: () => import('../components/HelloWorld.vue')
   }
 }
 </script>
