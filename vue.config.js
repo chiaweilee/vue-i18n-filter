@@ -6,5 +6,6 @@ module.exports = {
       title: 'vue-dev'
     }
   },
+  productionSourceMap: false,
   runtimeCompiler: true // to use the template option in Vue components, extra 10kb payload
 }
