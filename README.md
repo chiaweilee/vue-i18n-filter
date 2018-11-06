@@ -36,6 +36,6 @@ filters `t`, `te`, `tc` equal to '$t', '$te', '$tc' in `vue-i18n`
 
 ```
 {{ 'hello' | t | cap }} // `Hello`
-
-*cap is another filter*
 ```
+
+*`cap` is another filter*
