@@ -1,5 +1,9 @@
 ## vue-i18n-filter
 
+<a href="https://npmcharts.com/compare/vue-i18n-filter?minimal=true"><img src="https://img.shields.io/npm/dm/vue-i18n-filter.svg" alt="Downloads"></a>
+<a href="https://www.npmjs.com/package/vue-i18n-filter"><img src="https://img.shields.io/npm/v/vue-i18n-filter.svg" alt="Version"></a>
+<a href="https://www.npmjs.com/package/vue-i18n-filter"><img src="https://img.shields.io/npm/l/vue-i18n-filter.svg" alt="License"></a>
+
 ### Install
 
 ```
