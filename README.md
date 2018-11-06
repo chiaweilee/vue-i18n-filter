@@ -18,24 +18,27 @@ Vue.use(VueI18nFilter)
 ```
 
 ```vue.js
-<template>
-    {{ 'message.hello' | t }}
-    {{ 'message.greeting2' | t({ name: 'kazupon' }) }}
-</template>
+{{ 'message.hello' | t }}
+{{ 'message.greeting2' | t({ name: 'kazupon' }) }}
 ```
 
 ### t, te, tc
 
-filters `t`, `te`, `tc` equal to '$t', '$te', '$tc' in `vue-i18n`
+`vue-i18n-filter` add filter in Vue components.
+Filters `t`, `te`, `tc` equal to `$t`, `$te`, `$tc` in `vue-i18n`
 
-```
+```vue.js
 {{ 'message.hello' | t }} // equal to $t('message.hello')
 ```
 
-### Demo
+### Why use filter
 
 ```
-{{ 'hello' | t | cap }} // `Hello`
+{{ $t('message.hello') | cap }}
 ```
 
-*`cap` is another filter*
+*v.s*
+
+```
+{{ 'message.hello' | t | cap }}
+```
