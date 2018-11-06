@@ -1,8 +1,9 @@
 {
   "name": "vue-i18n-filter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "sideEffects": false,
+  "main": "lib/index.js",
   "scripts": {
     "dev": "npm run serve",
     "start": "npm run serve",
