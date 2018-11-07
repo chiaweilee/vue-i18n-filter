@@ -60,7 +60,7 @@ var message = {
           hello: 'こんにちは、世界',
           greeting: 'やあ！',
           greeting2: 'やあ {name}！',
-          apple: '林檎ってしまった | one 林檎 | {count} 林檎'
+          apple: '林檎ってしまった | one 林檎 | {count}の林檎'
         }
       }
 }
