@@ -4,10 +4,8 @@ export default {
       beforeCreate () {
         const { filters } = this.$options
         const assets = name => {
-          if (typeof filters[name] !== 'undefined') {
-            console.warn(`Can not set filter '${name}', it already exists.`)
-          } else {
-            filters[name] = (...arg) => this[`$${name}`].apply(this, arg)
+          if (typeof filters[name] === 'undefined') {
+            filters[name] = (...arg) => this[`$${name}`] ? this[`$${name}`].apply(this, arg) : arg[0]
           }
         }
         assets('t')
