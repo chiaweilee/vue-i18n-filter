@@ -11,7 +11,13 @@ export default {
         assets('t')
         assets('tc')
         assets('te')
-      }
+      },
+      beforeDestroy () {
+      const { filters } = this.$options
+      if (filters.t) { delete filters.t }
+      if (filters.te) { delete filters.te }
+      if (filters.tc) { delete filters.tc }
+    }
     })
   }
 }
