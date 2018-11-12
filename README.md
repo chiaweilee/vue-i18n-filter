@@ -32,7 +32,7 @@ Vue.use(VueI18nFilter)
 
 ### t, te, tc
 
-`vue-i18n-filter` add filter in Vue components.
+`vue-i18n-filter` add filters in Vue components.
 Filters `t`, `te`, `tc` equal to `$t`, `$te`, `$tc` in `vue-i18n`
 
 ```vue.js
