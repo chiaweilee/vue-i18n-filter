@@ -26,7 +26,7 @@ equal effect with `$t`, `$te`, `$tc` of `vue-i18n`.*
 #### Basic usage
 
 ```vue.js
-{{ 'message.hello' | t }}
+{{ '你好' | t }} // hello
 ```
 
 ### Example
