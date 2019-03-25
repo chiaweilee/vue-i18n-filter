@@ -1,6 +1,6 @@
 {
   "name": "vue-i18n-filter",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "sideEffects": false,
   "main": "lib/index.js",
