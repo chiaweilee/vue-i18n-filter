@@ -6,8 +6,6 @@ export default {
         const set = name => {
           if (typeof filters[name] === 'undefined') {
             filters[name] = (...arg) => (this.$i18n && this[`$${name}`]) ? this[`$${name}`].apply(this, arg) : arg[0]
-          } else {
-            console.warn(`[vue-i18n-filter] filter '${name}' already exists.`)
           }
         }
         set('t')
