@@ -1,4 +1,4 @@
-# [Vue-I18n-filter](#) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/chiaweilee/vue-i18n-filter/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/vue-i18n-filter.svg?style=flat)](https://www.npmjs.com/package/vue-i18n-filter) [![Coverage Status](https://img.shields.io/coveralls/chiaweilee/vue-i18n-filter/master.svg?style=flat)](https://coveralls.io/github/chiaweilee/vue-i18n-filter?branch=master) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#)
+# [Vue-I18n-filter](#) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/chiaweilee/vue-i18n-filter/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/vue-i18n-filter.svg?style=flat)](https://www.npmjs.com/package/vue-i18n-filter) [![npm downloads](https://img.shields.io/npm/dm/vue-i18n-filter.svg)](https://npmcharts.com/compare/vue-i18n-filter?minimal=true)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#)
 
 Vue-I18n-filter is a Vue `filter` mix-in for Vue-I18n, which allow you use Vue filter to declare Vue-i18n.
 
