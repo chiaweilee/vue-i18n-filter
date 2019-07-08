@@ -11,21 +11,20 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "dev": "npm run serve",
-    "start": "npm run build && npm run serve",
+    "prestart": "npm run build",
+    "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "npm run build:babel",
     "lint": "npm run lint:es && npm run lint:ts && npm run lint:sty",
     "lint:es": "eslint --ext .js --ext .jsx . --fix",
     "lint:ts": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" --fix",
-    "test": "npm run test:unit & npm run test:e2e",
-    "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit",
+    "pretest": "npm run build",
+    "test": "cross-env BABEL_ENV=test karma start config/karma.unit.conf.js",
     "build:babel": "npx babel src --out-dir lib --extensions \".ts\"",
     "precommit": "lint-staged"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "node scripts/verify-commit-msg.js"
+    "pre-commit": "lint-staged"
   },
   "author": "+v",
   "license": "MIT",
@@ -51,6 +50,7 @@
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-eslint": "^9.0.0",
     "chai": "^4.1.2",
+    "cross-env": "^5.2.0",
     "eslint": "^5.12.0",
     "eslint-config-ali": "^7.0.0",
     "eslint-config-prettier": "^4.1.0",
@@ -60,9 +60,20 @@
     "eslint-plugin-vue": "^5.2.3",
     "husky": "^0.14.3",
     "jest": "^24.8.0",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-sauce-launcher": "^1.2.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.5",
     "lint-staged": "^7.3.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "sinon": "^7.3.2",
     "tslint": "^5.18.0",
     "tslint-config-ali": "^0.2.4",
     "tslint-config-prettier": "^1.18.0",
@@ -70,7 +81,8 @@
     "typescript": "^3.3.3333",
     "vue": "^2.6.9",
     "vue-i18n": "^8.9.0",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.35.3"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
